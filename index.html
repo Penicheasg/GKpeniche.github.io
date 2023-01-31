@@ -105,12 +105,12 @@ form {
                 <div>
   <label for="textField">Enter text:</label>
   <input type="text" id="textField" oninput="limitText()">
-  <p id="charCount"></p>
+  
 </div>
   <script>
     function limitText() {
   var textField = document.getElementById("textField");
-  var charCount = document.getElementById("charCount");
+  
   if (textField.value.length > 100) {
     textField.value = textField.value.substring(0, 100);
     charCount.innerHTML = "asgteampf";
