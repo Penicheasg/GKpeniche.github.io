@@ -110,12 +110,12 @@ form {
   <script>
     function limitText() {
   var textField = document.getElementById("textField");
-  
+   var charCount = document.getElementById("charCount");
   if (textField.value.length > 100) {
     textField.value = textField.value.substring(0, 100);
     charCount.innerHTML = "asgteampf";
   } else {
-    charCount.innerHTML = textField.value.length + "/100";
+    charCount.innerHTML = textField.value.length + "ta errado";
   }
 }
   </script>
