@@ -91,7 +91,7 @@ form {
                    Clique aqui para ver detalhes sobre o serviço
                    </summary>
                    <p>
-                   Antes de tudo vou me apresentar: <em> Sou LUCAS PENICHE, PENTESTER <br> a 5 ANOS além disso<br> Professoro na FORMMING HACKERS. </em> Eu sou especializado em testar aplicativos da web e sua infraestrutura e serviços. <br> Tenho vasta experiência com uma ampla variedade de estruturas e tecnologias de aplicativos da web e está alinhada aos padrões de teste de segurança da web OWASP.
+                   Antes de tudo vou me apresentar: <em> Sou LUCAS PENICHE, PENTESTER <br> a 5 ANOS além disso<br> Professoro na TRILHA DO HACKER. </em> Eu sou especializado em testar aplicativos da web e sua infraestrutura e serviços. <br> Tenho vasta experiência com uma ampla variedade de estruturas e tecnologias de aplicativos da web e está alinhada aos padrões de teste de segurança da web OWASP.
                    </p> <br>
                   <a  href="https://api.whatsapp.com/send?phone=+5527996092914&text=quero%20saber%20mais"
                    target="_blank"
@@ -100,7 +100,25 @@ form {
                    </a>
                    </details>
                    </div>
-                   
+  
+  
+                <div>
+  <label for="textField">Enter text:</label>
+  <input type="text" id="textField" oninput="limitText()">
+  <p id="charCount"></p>
+</div>
+  <script>
+    function limitText() {
+  var textField = document.getElementById("textField");
+  var charCount = document.getElementById("charCount");
+  if (textField.value.length > 100) {
+    textField.value = textField.value.substring(0, 100);
+    charCount.innerHTML = "asgteampf";
+  } else {
+    charCount.innerHTML = textField.value.length + "/100";
+  }
+}
+  </script>
                    
                    
                    
